@@ -1,0 +1,56 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 720px;
+        height: 300px;
+    }
+
+    table {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 10px;
+        width: 680px;
+        text-align: left;
+        border-collapse: collapse; 
+/*         border: 1px solid #69c;  */
+        margin: 10px;
+        cursor: default; 
+    }
+    table th{
+        font-weight: normal;
+        font-size: 15px;
+        color: #039;
+        border-bottom: 1px dashed #69c;
+        padding: 10px 5px;
+        white-space: nowrap;
+    }
+
+    table td{
+        color: #669;
+        padding: 5px 2px;
+        white-space: nowrap;
+    }
+    
+    #kv{
+    	overflow-y:auto;
+    	overflow-x:auto;
+    }
+
+	input[type=button]{
+		margin-bottom:5px;
+		float:left;
+		width:50px;
+		height:25px;
+		margin-left:30px;
+	}
+	
+	#handle{
+		position: relative; 
+		bottom: 0; 
+		display: block;
+		height:30px;
+		margin-bottom:10px;
+		float:left
+	}

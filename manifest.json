@@ -1,0 +1,29 @@
+{
+   "manifest_version": 2,
+   "name": "XPath抽取",
+   "version": "1.0.0",
+   
+   "browser_action":{
+   		"default_icon":"img/icon32.png",
+   		"default_title":"xpath抽取",
+   	    "default_popup": "popup.html"
+   },
+   
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "css": [ "css/content.css" ],
+      "js": [ "js/content.js" ],
+      "matches": [ "<all_urls>" ]
+   } ],
+   "description": "Extract, configure and save xpath.",
+   "icons": {
+      "128": "img/icon128.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png"
+   },
+   "permissions":["contextMenus","storage"],
+   "web_accessible_resources": [ "css/bar.css", "bar.html", "js/bar.js" ]
+}
+
